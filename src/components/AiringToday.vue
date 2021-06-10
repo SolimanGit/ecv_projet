@@ -5,9 +5,9 @@
     <div v-if="Page">
     <div class="flex flex-col my-10" v-for="(item, index) in Page.airingSchedules" :key="index">
         <div class="bg-white margin-5 flex">
-            <div><img :src="item.media.coverImage.medium" alt="coverImage"></div>
-            <div><p class="text-black inline-block">{{item.media.title.romaji}}</p><br>
-            <p class="text-black inline-block">{{AirTime(item)}}</p></div>
+            <div class="w-40"><img :src="item.media.coverImage.medium" alt="coverImage"></div>
+            <div><p class="text-black inline-block text-left">{{item.media.title.romaji}}</p><br>
+            <p class="text-black inline-block text_left">{{AirTime(item)}}</p></div>
         </div>
     </div>
     </div>

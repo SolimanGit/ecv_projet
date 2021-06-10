@@ -6,7 +6,7 @@
       <div class=" flex" v-if="Page">
         <div class="flex flex-nowrap mx-8" v-for="(item, index) in Page.media" :key="index">
           <router-link :to="'/Media/'+item.id">  
-          <div class="border-2 border-red-600 inline-block">
+          <div class=" inline-block">
           <div class=" overflow-hidden h-56 w-40">
             <img class="h-full w-full" :src='item.coverImage.large' alt="cover_media">
           </div>

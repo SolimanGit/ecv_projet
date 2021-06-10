@@ -1,14 +1,14 @@
 <template>
-  <div id="app" class="bg-blue-dark">
+  <div id="app">
     <div id="nav" class="bg-dark-light text-gray">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">Read</router-link> |
-      <router-link to="/about">Watch</router-link>
+      <router-link to="/about">Watch</router-link> |
+      <!-- <a href="'https://anilist.co/api/v2/oauth/authorize?client_id=5760&response_type=token">Login with AniList</a> -->
     </div>
     <router-view/>
   </div>
 </template>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
